@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>FonteFace</title>
+    @
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+        @font-face {
+            font-family:'IconicFill' ;
+            src: url(iconic_fill.woff) format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+       body{
+           font-family: 'Press Start 2P', cursive;;
+       }
+       .icon-next::after{
+           content: '\2192';
+           font-family: 'IconicFill';
+           margin-left: 10px;
+       }
+    </style>
+</head>
+<body>
+    <h1>CSS E HTML</h1>
+    <h2 class='icon-next'>Avançar</h2>
+</body>
+</html>

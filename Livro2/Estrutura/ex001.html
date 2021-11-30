@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .clearfix::before, clearfix::after{
+            content: "";
+            display: table;
+        }
+        .clearfix::after{
+            clear: both;
+        }
+        .page{
+            background-color: #E8E8E8;
+            padding: 10px;
+            margin:  0 auto;
+            width: 940px;
+        }
+        .post{
+           float: left;
+           width: 600px;
+        }
+        h1{
+            float: left;
+            margin: 0 0 20px;
+        }
+        p{
+            clear: both;
+        }
+        .timestamp{
+            background-color: #000;
+            color: #FFF;
+            float: right;
+            font-size: 0.9em;
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+        aside{
+            background-color: #FFFBE4;
+            border: 1px solid #C9BC8F;
+            float:  right;
+            padding: 10px;
+            width: 200px;
+            margin-top: -60px;
+        }
+        aside h3{
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="page clearfix">
+        <section>
+            <article class="post">
+                <h1><a href="#">Título do post #1</a></h1>
+                <span class="timestamp">3 Semana atrás...</span>
+                <p>
+                    Uma breve descrição sobre o assunto abordado no posto número 1...
+                </p>
+            </article>
+        
+            <article class="post">
+                <h1><a href="#">Título do posto #2</a></h1>
+                <span class="timestamp">3 semanas atrás...</span>
+                <p>Uma breve descrição sobre o assunto abordadono post número... </p>
+            </article>
+        </section>
+        <aside>
+            <h3>Veja outros posts</h3>
+            <ol>
+                <li><a href="">Post #3</a></li>
+                <li><a href="">Post #4</a></li>
+                <li><a href="">Post #5</a></li>
+                <li><a href="">Post #6</a></li>
+            </ol>
+        </aside>
+    </div>
+    
+</body>
+</html>

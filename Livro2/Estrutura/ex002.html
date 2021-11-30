@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex002</title>
+    <style>
+        .noticia{
+            background-color: #fff;
+            border: 1px solid #000;
+            height:130px;
+            width: 380px;
+            padding: 10px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -75px 0 0 -200px;
+            z-index: 1;
+        }
+        p{
+            font-size: 12px;
+        }
+        .overlay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+        }
+       
+    </style>
+    <script>
+        $('show-modal').on("click)",function(){
+            $('overlay, .noticia').show()
+        }
+
+    </script>
+</head>
+<body>
+    <a id="show-modal" href="Javascript:;">Exibir modal</a>
+    <div class="noticia">
+        <h1>Atenção</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dicta neque, accusamus obcaecati nemo vero omnis molestiae, inventore assumenda, sapiente quae perspiciatis suscipit aliquam aperiam eum sint ratione ipsa voluptatum.</p>
+    </div>
+    <div class="overlay"></div>
+</body>
+</html>

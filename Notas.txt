@@ -1,0 +1,3 @@
+  :focus, para elementos que estejam focados pelo teclado, como links ou campos de um formulário;
+• :visited, para endereços já visitados pelo usuário;
+• :active, para o instante onde o elemento está sendo pressionado pelo mouse.
